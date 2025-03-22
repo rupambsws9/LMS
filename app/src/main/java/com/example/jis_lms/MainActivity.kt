@@ -23,12 +23,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btn1.setOnClickListener{
-            Toast.makeText(this, "i am no 1", Toast.LENGTH_SHORT).show()
-        }
-        binding.btn2.setOnClickListener{
-            Toast.makeText(this, "i am no 2", Toast.LENGTH_SHORT).show()
-        }
 
     }
 
