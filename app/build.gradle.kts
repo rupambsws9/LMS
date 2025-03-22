@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.jis_lms"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.jis_lms"
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
+
 }
 
 dependencies {
