@@ -1,17 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".menufragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Menu fragment"
-        android:textSize="40sp"
-        android:gravity="center"
-        />
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
 
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardView"
+           android:layout_width="120dp"
+           android:layout_height="129dp"
+           android:layout_marginStart="64dp"
+           android:layout_marginTop="100dp"
+           android:elevation="50dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardView2"
+           android:layout_width="120dp"
+           android:layout_height="129dp"
+           android:layout_marginTop="100dp"
+           android:layout_marginEnd="52dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardView3"
+           android:layout_width="120dp"
+           android:layout_height="129dp"
+           android:layout_marginTop="68dp"
+           app:layout_constraintEnd_toEndOf="@+id/cardView"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/cardView"
+           app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardView4"
+           android:layout_width="120dp"
+           android:layout_height="129dp"
+           app:layout_constraintEnd_toEndOf="@+id/cardView2"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/cardView2"
+           app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardView5"
+           android:layout_width="120dp"
+           android:layout_height="129dp"
+           android:layout_marginTop="68dp"
+           app:layout_constraintEnd_toEndOf="@+id/cardView3"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/cardView3"
+           app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="120dp"
+           android:layout_height="129dp"
+           app:layout_constraintBottom_toBottomOf="@+id/cardView5"
+           app:layout_constraintEnd_toEndOf="@+id/cardView4"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/cardView4" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
