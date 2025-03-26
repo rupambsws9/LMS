@@ -1,1 +1,3 @@
 # LMS
+
+Its hard bruh 😭
